@@ -24,7 +24,10 @@
   <script async src="https://www.googletagmanager.com/gtag/js?id=UA-165340869-1"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
     gtag('js', new Date());
 
     gtag('config', 'UA-165340869-1');
@@ -40,8 +43,8 @@
   </nav>
 
   <div class="alert alert-warning" role="alert">
-  このツールはベータ版です。ご意見・ご感想ございましたら、<a href="https://forms.gle/Pm1XyHTG8bhPK8Ku6" target="_blank" class="alert-link">こちら</a>からご連絡ください。
-</div>
+    このツールはベータ版です。ご意見・ご感想ございましたら、<a href="https://forms.gle/Pm1XyHTG8bhPK8Ku6" target="_blank" class="alert-link">こちら</a>からご連絡ください。
+  </div>
 
   <div class="mainContent">
     <h1>1.はじめの挨拶</h1>
@@ -52,6 +55,28 @@
           <button type="button" class="list-group-item list-group-item-action" onmouseover="mouseOver('お世話になります。')" onmouseleave="mouseLeave()" onClick="addText('お世話になります。')">お世話になります。</button>
           <button type="button" class="list-group-item list-group-item-action" onmouseover="mouseOver('ご連絡いただきありがとうございます。')" onmouseleave="mouseLeave()" onClick="addText('ご連絡いただきありがとうございます。')">ご連絡いただきありがとうございます。</button>
           <button type="button" class="list-group-item list-group-item-action" onmouseover="mouseOver('平素は格別のご愛顧を賜り感謝いたします。')" onmouseleave="mouseLeave()" onClick="addText('平素は格別のご愛顧を賜り感謝いたします。')">平素は格別のご愛顧を賜り感謝いたします。</button>
+        </div>
+      </div>
+      <div class="userName">
+        <div class="input-group">
+          <select class="custom-select" id="inputbox-greeting" aria-label="Example select with button addon">
+            <optgroup label="5月上旬">
+              <option value="惜春の候、貴社ますますご繁栄のことと心からお喜び申し上げます。">惜春の候、貴社ますますご繁栄のことと心からお喜び申し上げます。</option>
+              <option value="葉桜の候、貴社ますますご繁栄のことと心からお喜び申し上げます。">葉桜の候、貴社ますますご繁栄のことと心からお喜び申し上げます。</option>
+            </optgroup>
+            <optgroup label="5月全般">
+              <option value="新緑の候、貴社ますますご繁栄のことと心からお喜び申し上げます。">新緑の候、貴社ますますご繁栄のことと心からお喜び申し上げます。</option>
+              <option value="薫風の候、貴社ますますご繁栄のことと心からお喜び申し上げます。">薫風の候、貴社ますますご繁栄のことと心からお喜び申し上げます。</option>
+              <option value="若葉の候、貴社ますますご繁栄のことと心からお喜び申し上げます。">若葉の候、貴社ますますご繁栄のことと心からお喜び申し上げます。</option>
+            </optgroup>
+            <optgroup label="5月下旬～6月全般">
+              <option value="向暑の候、貴社ますますご繁栄のことと心からお喜び申し上げます。">向暑の候、貴社ますますご繁栄のことと心からお喜び申し上げます。</option>
+            </optgroup>
+          </select>
+          <div class="input-group-append">
+            <button class="btn btn-outline-primary" type="button" id="name-add" onClick="addName(document.getElementById('inputbox-greeting').value)" onmouseover="mouseOver(document.getElementById('inputbox-greeting').value)"
+              onmouseleave="mouseLeave()">追加</button>
+          </div>
         </div>
       </div>
     </div>
@@ -73,6 +98,11 @@
     <div class="userName">
       <div class="input-group">
         <select class="custom-select" id="inputGroupSelect04" aria-label="Example select with button addon">
+          <optgroup label="トレンド">
+            <option value="新型コロナウイルスの影響が及んでいないかと心配をしておりました。">新型コロナウイルスの影響が及んでいないかと心配をしておりました。</option>
+            <option value="ご自愛のほど心よりお祈りいたしております。">ご自愛のほど心よりお祈りいたしております。</option>
+            <option value="貴社の従業員の皆様におかれましてもご自愛のほど心よりお祈りしております。">貴社の従業員の皆様におかれましてもご自愛のほど心よりお祈りしております。</option>
+          </optgroup>
           <optgroup label="春（4月～6月ごろ）">
             <option value="春とはいえ、まだ肌寒い日が続きますね">春とはいえ、まだ肌寒い日が続きますね</option>
             <option value="日増しに日差しが春めいてまいりました。">日増しに日差しが春めいてまいりました。</option>
@@ -163,6 +193,11 @@
       <div class="input-group">
         <select class="custom-select" id="inputGroupSelect05" aria-label="Example select with button addon">
           <option selected disabled>その他の表現を選択してください。</option>
+          <optgroup label="トレンド">
+            <option value="ご自愛のほど心よりお祈りいたしております。">ご自愛のほど心よりお祈りいたしております。</option>
+            <option value="貴社の従業員の皆様におかれましてもご自愛のほど心よりお祈りしております。">貴社の従業員の皆様におかれましてもご自愛のほど心よりお祈りしております。</option>
+            <option value="私どもで何かお役に立てることがありましたら､ 遠慮なくお申し付けください。">私どもで何かお役に立てることがありましたら､ 遠慮なくお申し付けください。</option>
+          </optgroup>
           <optgroup label="春（4月～6月ごろ）">
             <option value="春とはいえ、まだ肌寒い日が続きますね">春とはいえ、まだ肌寒い日が続きますね</option>
             <option value="日増しに日差しが春めいてまいりました。">日増しに日差しが春めいてまいりました。</option>
@@ -241,23 +276,23 @@
     </div>
   </div>
 
-</footer>
+  </footer>
 
-    <div class="jumbotron">
-      <h1 class="display-4">知ろう</h1>
-      <p class="lead">ビジネスメールを書くのはかんたんです。</p>
-      <hr class="my-4">
-      <p>入門　考える技術・書く技術 日本人のロジカルシンキング実践法は、メールを書く際のみならず思考法からあなたを変えられます。</p>
-      <a class="btn btn-primary btn-lg" href="https://a.r10.to/hIANmM" role="">商品を見てみる</a>
-    </div>
+  <div class="jumbotron">
+    <h1 class="display-4">知ろう</h1>
+    <p class="lead">ビジネスメールを書くのはかんたんです。</p>
+    <hr class="my-4">
+    <p>入門　考える技術・書く技術 日本人のロジカルシンキング実践法は、メールを書く際のみならず思考法からあなたを変えられます。</p>
+    <a class="btn btn-primary btn-lg" href="https://a.r10.to/hIANmM" role="">商品を見てみる</a>
+  </div>
 
 
-<div class="footer-space">
+  <div class="footer-space">
 
-<br>
+    <br>
 
-</div>
-    <footer>
+  </div>
+  <footer>
 
 </body>
 
