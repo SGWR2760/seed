@@ -1,0 +1,69 @@
+header {
+  z-index: 100;
+  position: sticky;
+  top: 0;
+}
+
+.headerContent {
+  position: sticky;
+  top: 0;
+}
+
+main {
+  z-index: 1;
+  overflow: hidden;
+}
+
+.articleTag {
+  vertical-align: middle;
+}
+
+.jumbotron {
+  margin-bottom: 0px;
+}
+
+.footerContent {}
+
+.myName {
+  padding-top: 16px;
+  text-align: center;
+}
+
+.card-subtitle {
+  margin-top: 32px;
+}
+
+h1 {
+  font-size: 1.5rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+}
+
+/* PC版 */
+@media screen and (min-width: 701px) {
+  .card {
+    margin: 16px;
+  }
+
+  .mainContent {
+    width: 60%;
+    float: left;
+  }
+
+  .sideContent {
+    width: 40%;
+    float: left;
+  }
+  .index {
+    width: 75%;
+  }
+}
+
+/* スマホ版 */
+@media screen and (max-width: 700px) {
+  .card {
+    margin: 8px;
+  }
+}
