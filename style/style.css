@@ -33,6 +33,9 @@ body {
 .adCard {
   padding: 0.5rem;
 }
+.adImage{
+  text-align: center;
+}
 
 .amazonBtn {
   background-color: var(--amazon-color);
