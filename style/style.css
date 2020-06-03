@@ -58,7 +58,7 @@ body {
 
 .itemHr {
   margin: 0;
-  height:1px;
+  height: 1px;
   border: none;
   color: var(--main-accent-color);
   background-color: var(--main-accent-color);
@@ -78,7 +78,8 @@ body {
 .itemDisp {
   padding: 1rem;
 }
-.itemSchedule p{
+
+.itemSchedule p {
   display: inline-block;
   text-align: left;
 }
