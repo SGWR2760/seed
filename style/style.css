@@ -50,10 +50,18 @@ body {
   width: 32px;
 }
 
-.itemHeaderImage{
+.itemHeaderImage {
   width: 150px;
   height: 150px;
   object-fit: contain;
+}
+
+.itemHr {
+  margin: 0;
+  height:1px;
+  border: none;
+  color: var(--main-accent-color);
+  background-color: var(--main-accent-color);
 }
 
 .itemCard {
@@ -69,6 +77,15 @@ body {
 
 .itemDisp {
   padding: 1rem;
+}
+.itemSchedule p{
+  display: inline-block;
+  text-align: left;
+}
+
+.itemDetailButton {
+  text-align: center;
+  width: 100%;
 }
 
 .adCard {
