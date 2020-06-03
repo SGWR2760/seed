@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+JP:wght@400;900&display=swap');
 
 :root {
   --main-bg-color: #d8ebb5;
@@ -10,7 +10,7 @@
 }
 
 body {
-  background-color: var(--main-bg-color);
+  /* background-color: var(--main-bg-color); */
   font-family: 'Noto Serif JP', serif;
 }
 
@@ -30,10 +30,52 @@ body {
   color: var(--navbar-color);
 }
 
+.headerImage {
+  height: 100%;
+}
+
+.itemCol {
+  margin-bottom: 6rem;
+}
+
+.itemTItle {
+  text-align: center;
+  margin-top: 6rem;
+  margin-bottom: 6rem;
+  font-weight: bold;
+}
+
+.itemTitleIcon {
+  height: 32px;
+  width: 32px;
+}
+
+.itemHeaderImage{
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+}
+
+.itemCard {
+  text-align: center;
+  background-color: transparent;
+  border: 0;
+  border-color: var(--sub-color);
+}
+
+.itemCardTtle {
+  margin-top: 1rem;
+}
+
+.itemDisp {
+  padding: 1rem;
+}
+
 .adCard {
   padding: 0.5rem;
 }
-.adImage{
+
+.adImage {
   text-align: center;
 }
 
