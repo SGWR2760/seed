@@ -26,15 +26,21 @@ body {
   color: white;
 }
 
-.headerList{
+/* .headerImageTitle {
+  position: absolute;
+  top: 15%;
+  left: 65%;
+} */
+
+.headerList {
   text-align: center;
   height: 3rem;
-  width:100%;
+  width: 100%;
   background-color: var(--navbar-color);
   z-index: 99;
 }
 
-.headerList ul{
+.headerList ul {
   padding-inline-start: 0;
 }
 
@@ -46,7 +52,6 @@ body {
 .headerListItem a {
   color: white;
 }
-
 
 .breadcrumb {
   background-color: var(--main-bg-color);
