@@ -132,6 +132,10 @@ body {
   text-align: center;
 }
 
+.makerPage{
+  text-align: center;
+}
+
 .amazonBtn {
   background-color: var(--amazon-color);
   border: 0;
